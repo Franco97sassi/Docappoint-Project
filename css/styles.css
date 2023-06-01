@@ -1,0 +1,44 @@
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    padding-right: 10px;
+    text-decoration: none;
+    list-style-type: none;
+}
+ul li a{
+    text-decoration: none;
+}
+.card {
+    max-width: 30%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    background-color: rgb(97, 165, 233);
+  }
+  .card .card-image .card-title {
+    color: rgb(10, 6, 15);
+    position: unset
+  }
+  .boton-agregar{
+    width: 75px;
+    background-color: azure;
+    font-weight: bold;
+    border-radius: 50px;
+  
+  }    
+  td img {
+    max-width: 150px;
+    max-height: 150px;
+}
+td,th,input,label{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(10, 6, 15);
+}
