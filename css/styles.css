@@ -1,3 +1,10 @@
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ 
 .logo{
     display: flex;
     flex-direction: row;
@@ -5,17 +12,20 @@
 }
 
 nav ul{
+  padding: 100px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 100px;
-    padding-right: 10px;
+    justify-content: space-around;
+    align-items: center;
     text-decoration: none;
     list-style-type: none;
+    align-items: center;
 }
+
 ul li a{
     text-decoration: none;
 }
+
 .card {
     max-width: 30%;
     border-radius: 5px;
@@ -33,6 +43,7 @@ ul li a{
     border-radius: 50px;
   
   }    
+  
   td img {
     max-width: 150px;
     max-height: 150px;
@@ -41,4 +52,73 @@ td,th,input,label{
     font-size: 20px;
     font-weight: bold;
     color: rgb(10, 6, 15);
+}
+ 
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+ 
+  header{
+     
+    padding: 10px;
+    background-color: rgb(97, 165, 233);
+    color: rgb(10, 6, 15);
+    font-size: 20px;
+    font-weight: bold;
+    height: 200px;
+  
+}
+
+  
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+     color: rgb(10, 6, 15);
+    font-size: 20px;
+    font-weight: bold;
+} 
+main{
+  padding:100px;
+ } 
+.logo a{
+    text-decoration: none;
+    color: rgb(10, 6, 15);
+    font-size: 20px;
+    font-weight: bold;
+}   
+   .imagen{
+  background-color: #f8dbd3;
+  background-image: url("../c.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+   
+}  
+.imagen p{
+       display: flex;
+        flex-direction: column;
+}
+.especialidades{
+  height: 50px;
+   
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: blue;
+  border-radius: 10px;
+  border: solid 2px black;
+   margin-left: 75px;
+   margin-right: 75px;
+}
+
+img .doctor1{
+  width: 500px;
+  height:500px;
 }

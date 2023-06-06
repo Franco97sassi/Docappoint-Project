@@ -1,11 +1,11 @@
 //Funcion para filtrar productos
 const doctores =
 [
-    { id: 1, nombre: "doctor1", especialidad: "ginecologia",img: "1.jpeg" },
-    { id: 2, nombre: "doctor2", especialidad: "cardiologo",img: "2.jpeg" },
-    { id: 3, nombre: "doctor3", especialidad: "cirujano",img: "3.jpeg" },
-    { id: 4, nombre: "doctor4", especialidad:  "pediatra",img: "4.jpeg" },
-    { id: 5, nombre: "doctor5", especialidad: "endocrinologo",img: "5.jpeg" },
+    { id: 1, nombre: "Doctor1", especialidad: "Odontólogo",img: "1.jpeg" ,sintoma:"caries,encias"},
+    { id: 2, nombre: "Doctor2", especialidad: "Cardiologo",img: "2.jpeg",sintoma: "corazon,pecho"},
+    { id: 3, nombre: "Doctor3", especialidad: "Infectologo",img: "3.jpeg",sintoma:"fiebre,garganta"  },
+    { id: 4, nombre: "Doctor4", especialidad:  "Otorrinolaringolo",img: "4.jpeg",sintoma:"oido,nariz,garganta,cabeza,cuello"  },
+    { id: 5, nombre: "Doctor5", especialidad: "Endocrinologo",img: "5.jpeg",sintoma:"obesidad,diabetes"},
    
 ]
 
@@ -39,11 +39,12 @@ const doctores =
   
        
 //   });
+contenedor = document.querySelector("#contenedor");
 function crearHTML(doctores) {
     let html;
     contenedor.innerHTML = "";
     for (const doctor of doctores) {
-      html = ` <tr><td>${doctor.id}<img src="./img/${doctor.img}"/> </img></td>
+      html = ` <tr><td> <img src="./img/${doctor.img}"/> </img></td>
              
            <td>${doctor.id}</td>
             
@@ -57,29 +58,82 @@ function crearHTML(doctores) {
   }
   crearHTML(doctores)
  
-function filtrar(filtro) {
-    let filtrado = doctores.filter((el) => {
-      return el.especialidad.includes(filtro);
-    })
-    return filtrado;
+  contenedor2 = document.querySelector("#contenedor2");
+ 
+  function crearHTML2(doctores) {
+    let html1;
+    contenedor2.innerHTML = "";
+    for (const doctor of doctores) {
+      html1 = ` <tr><td> <img src="./img/${doctor.img}"/> </img></td>
+             
+           <td>${doctor.id}</td>
+            
+              <td>  ${doctor.nombre}   </td>
+              <td> ${doctor.especialidad}</td>
+        </tr>`
+      contenedor2.innerHTML += html1; 
+    }
+    // tbody.innerHTML += html
+  
   }
+
+
+function filtrar(filtro) {
+    let filtrado= doctores.filter((el) => {
+      return el.especialidad.includes(filtro);
+    } )
+    return filtrado;
+  } 
+  function filtrar2(filtro) {
+    let filtrado= doctores.filter((el) => {
+      return el.sintoma.includes(filtro);
+    } )
+    return filtrado;}
+//   //   let filtrado = doctores.filter((el) => {
+//   //     return el.especialidad.includes(filtro);
+//   //   })
+//   //   return filtrado;
+//   // }
    
-const search = document.querySelector("#search");
+ const search = document.querySelector("#search");
 
 search.addEventListener("input", () => {
     let filtro = filtrar(search.value)
     crearHTML(filtro)
   })
 
-  crearHTML()
+//   crearHTML()
 
   const consulta = document.querySelector("#consulta");
- w(){let entrada=prompt("ingrese sintoma");
- while(entrada!=no){
-    switch(entrada){
-         case "fiebre":
-             crearHTML(filtrar("pediatra"))
- }}
-}
-w()
-   
+  
+consulta.addEventListener("input", () => {
+  let nuevoFiltro = filtrar2(consulta.value ) 
+  crearHTML2(nuevoFiltro);
+  });
+
+  
+  
+  // contenedor3 = document.querySelector("#contenedor3");
+ 
+  // function crearHTML3(doctores) {
+  //   let html;
+  //   contenedor3.innerHTML = "";
+  //   for (const doctor of doctores) {
+  //     html = ` <tr><td> <img src="./img/${doctor.img}"/> </img></td>
+             
+  //          <td>${doctor.id}</td>
+            
+  //             <td>  ${doctor.nombre}   </td>
+  //             <td> ${doctor.especialidad}</td>
+  //             <td>  <button id="detalles">Consultar </button></td>
+  //       </tr>`
+  //     contenedor3.innerHTML += html;
+  //   }
+  //   // tbody.innerHTML += html
+  
+  // }
+  // crearHTML3(doctores)
+  // detalles=document.querySelector("#detalles")
+  // detalles.addEventListener("click",()=>{
+  //   alert("hola")
+  // } )
