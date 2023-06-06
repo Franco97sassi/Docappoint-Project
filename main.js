@@ -44,7 +44,7 @@ function crearHTML(doctores) {
     let html;
     contenedor.innerHTML = "";
     for (const doctor of doctores) {
-      html = ` <tr><td> <img src="./img/${doctor.img}"/> </img></td>
+      html = ` <tr><td> <img src="./img/${doctor.img}" /> </img></td>
              
            <td>${doctor.id}</td>
             
@@ -64,7 +64,7 @@ function crearHTML(doctores) {
     let html1;
     contenedor2.innerHTML = "";
     for (const doctor of doctores) {
-      html1 = ` <tr><td> <img src="./img/${doctor.img}"/> </img></td>
+      html1 = ` <tr><td> <img src="./img/${doctor.img}" width="100px" heigth="100px"/> </img></td>
              
            <td>${doctor.id}</td>
             
@@ -137,3 +137,18 @@ consulta.addEventListener("input", () => {
   // detalles.addEventListener("click",()=>{
   //   alert("hola")
   // } )
+
+ 
+const DateTime = luxon.DateTime;
+
+const ahora= DateTime.now()
+horaActual.value=ahora.toLocaleString(DateTime.TIME_24_SIMPLE)
+let dates = document.querySelectorAll('input[type="date"]');
+let inicio = DateTime.now().toFormat("yyyy-MM-dd");
+let fin = DateTime.now().plus({ months: 4 }).toFormat("yyyy-MM-dd");
+
+const evento= document.getElementById('evento');
+const tipo= document.getElementById('tipo');
+const total= document.getElementById('total');
+const fecha= document.getElementById('fecha');
+
