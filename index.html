@@ -1,38 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8"> 
-    
+    <meta charset="UTF-8">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
-    <title>Document</title>
-</head>
-<body>  
-    <header   class="fondoImagen" >
+     <title>Document</title>
+    <!--LinkBootstrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/styles.css">
+
+    </head>
+
+<body>
+    <header class="fondoImagen">
         <nav>
             <div class="logo">
-                <a href="index.html"><h1>Docappoint</h1> </a>
+                <a href="index.html">
+                    <h1>Docappoint</h1>
+                </a>
             </div>
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/consultaRapida.html">Consulta Rapida</a></li>
-                <li><a href="/especialistas.html">Especialistas</a></li>
+                <!-- <li><a href="/especialistas.html">Especialistas</a></li> -->
+                <li>
+                    <div class="dropdown">
+                        <button class="btn   dropdown-toggle navDropColor" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           Especialidades 
+                        </button>
+                        <ul class="dropdown-menu fond fondLi" >
+                          <li><a class="dropdown-item" href="doctor1.html">Odontólogo</a></li>
+                          <li><a class="dropdown-item" href="doctor2.html">Cardiologo</a></li>
+                          <li><a class="dropdown-item" href="doctor3.html">Infectologo</a></li>
+                          <li><a class="dropdown-item" href="doctor4.html">Otorrinolaringolo</a></li>
+                          <li><a class="dropdown-item" href="doctor5.html">Endocrinologo</a></li>
+                        </ul>
+                      </div>
+                </li>
+                <li> <a href="iniciosesion.html">  Inicio Sesion </a> </li>
+            </nav>
             </ul>
-        </nav>
-        
+            
+         
+
     </header>
-    <section  class="imagen"  >
+    <section class="imagen">
         <h1>Encontra ya tu especialista!</h1>
-     </section>
-     <br>
-     <section class="especialidades">
-        <h2>  Odontólogo Cardiologo Traumatólogo Endocrinólogo Dermatólogo Oftalmólogo Psiquiatra Endocrinólogo  Otorrinolaringolo Infectologo</h2> 
- 
-     </section>
+    </section>
+    <br>
+    <section class="especialidades">
+        <h2> Odontólogo Cardiologo Traumatólogo Endocrinólogo Dermatólogo Oftalmólogo Psiquiatra Endocrinólogo
+            Otorrinolaringolo Infectologo</h2>
+
+    </section>
     <main>
- 
-        
+        <section class="publicidad">
+            <img src="publicidad1.jpeg" alt="">
+            <img src="publicidad2.jpeg" alt="">
+            <img src="publicidad3.jpeg" alt="">
+        </section>
         <!-- <section class="section1"> 
          
         <label for="search" class="search"> Buscar(ingrese especialidad que desee Buscar)</label>
@@ -66,7 +95,7 @@
      
             <tbody id="contenedor2"></tbody>
         </table>     -->
-      <!-- <input type="search" id="consulta" value="consulta">    
+        <!-- <input type="search" id="consulta" value="consulta">    
         <select name="" id="select">
         <option value="corazon">diente</option>
         <option value="corazon">corazon</option>
@@ -77,13 +106,22 @@
     <option value="">niño</option>
     <option value="">Frecuencia cardiaca lenta</option>
 </select>     -->
- <!-- </section>   -->
- 
-      </main>  
-      <footer>
+        <!-- </section>   -->
+
+    </main>
+    <footer>
         <h3>Doccapoint</h3>
-     </footer>
+        <p>Docappoint©2023-Encontra tu especialista y pedi turno.</p>
+    </footer>
+    <!--LinkBootstrap 5-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
     <script src="/main.js"></script>
 
 </body>
+
 </html>

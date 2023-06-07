@@ -152,3 +152,17 @@ const tipo= document.getElementById('tipo');
 const total= document.getElementById('total');
 const fecha= document.getElementById('fecha');
 
+const btnTurnos = document.getElementsByClassName('btnTurnos');
+const modalCalendar = document.getElementsByClassName('modalCalendar');
+
+btnTurnos.addEventListener('click',()=>{
+    modalCalendar.classList.toggle('modal-active');
+})
+// btnTurnos.addEventListener('click',()=>{
+//   modalCalendar.innerHTML=` hola`
+// })
+
+const as= document.getElementById('as');
+as.addEventListener('click',()=>{
+  alert("hola")
+} )

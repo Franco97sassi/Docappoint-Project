@@ -34,8 +34,24 @@ function filtrar2(filtro) {
     return filtrado;}
 
 const consulta = document.querySelector("#consulta");
-  
+if(consulta){  
 consulta.addEventListener("input", () => {
   let nuevoFiltro = filtrar2(consulta.value ) 
   crearHTML2(nuevoFiltro);
-  });
+  })};
+
+const btnTurnos = document.getElementsByClassName('btnTurnos');
+const modalCalendar = document.getElementsByClassName('modalCalendar');
+
+// btnTurnos.addEventListener( "click" ,()=>{
+//     modalCalendar.classList.toggle('modal-active');
+// })
+// btnTurnos.addEventListener('click',()=>{
+//   modalCalendar.innerHTML=` hola`
+// })
+
+const as= document.getElementById('as');
+if(as){  
+as.addEventListener('click',()=>{
+  modalCalendar.classList.toggle('modal-active'); 
+} )}

@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
  }
+ @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 
  
 .logo{
@@ -24,6 +27,16 @@ nav ul{
 
 ul li a{
     text-decoration: none;
+    color: rgb(10, 6, 15);
+    /* font-family: 'Lobster', cursive;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 10rem; */
+
+}
+.wa{
+  text-decoration: none;
+    color: rgb(10, 6, 15);
+
 }
 
 .card {
@@ -158,12 +171,102 @@ img .doctor1{
 color: blue;
  }
  .consultaRapidafondo{
-  height: 50vh;
+  height: 90vh;
  }
 
  footer{
-  height: 10vh;
+  height: 15vh;
   background-color: rgb(97, 165, 233); 
   text-align: center;
-  font-size: 2rem;}
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+  }
+   
+  footer p{
+    font-size: 1.25rem;
+  }
+    .publicidad img{
+    width:300px;
+    height: 300px;
+    border-radius: 10px;
+
+  }    
+  .publicidad{
+     display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: space-evenly;
+    
+      gap: 30px;
+  }
   
+  .navDropColor{
+    color: rgb(0, 0, 0);
+    /* background-color: rgb(255, 255, 255); */
+    font-family:  Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+  }
+  .fond{
+    background-color: rgb(97, 165, 233);
+  }
+  .fondLi li a{
+    color: rgb(0, 0, 0);
+    font-family:  Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  .fondLi li a:hover{
+    color: rgb(0, 0, 0);
+    background-color: blue;
+    font-family:  Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  /* ul li a{
+    text-decoration: none;
+    color: rgb(10, 6, 15);
+    font-family: 'Lobster', cursive;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 10rem;
+
+}
+
+h1{
+  font-size: 10rem;
+  font-family: 'Lobster', cursive;
+  font-family: 'Merriweather Sans', sans-serif;
+  color: rgb(10, 6, 15);
+  text-align: center;
+  font-weight: bold;
+} */
+ /* .abrirCalendar{
+  modalCalendar
+} */
+ .asd{
+  background-color: blueviolet;
+   
+ }
+.modalCalendar{
+  
+   top: 0;
+  width: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   visibility: hidden;
+  
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.modal-active {
+  
+  opacity: 1;
+  visibility: visible;
+  z-index: 5;  
+}
+.a{
+  background-color: blueviolet;
+}
+ 
