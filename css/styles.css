@@ -15,7 +15,7 @@
 }
 
 nav ul{
-  padding: 100px;
+  padding: 25px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -31,6 +31,7 @@ ul li a{
     /* font-family: 'Lobster', cursive;
     font-family: 'Merriweather Sans', sans-serif;
     font-size: 10rem; */
+    
 
 }
 .wa{
@@ -154,7 +155,7 @@ img .doctor1{
   color:orange;
  }
 
- .link{
+ .medicoParticular{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -175,7 +176,7 @@ color: blue;
  }
 
  footer{
-  height: 15vh;
+  height: 30vh;
   background-color: rgb(97, 165, 233); 
   text-align: center;
   font-size: 2rem;
@@ -294,4 +295,61 @@ h1{
  .h3card{
     color: black;
     
+ }
+ .logo img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-right: 10px;
+ }
+ .fondoImagen .logo a{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: rgb(10, 6, 15);
+  font-size: 20px;
+  font-weight: bold;
+ }
+ .logo a h2{
+  color: rgb(10, 6, 15);
+  font-size: 25px;
+  font-weight: bold;
+ }
+ footer img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  
+ }
+ footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+ }
+ .registro{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  margin-left:10px;
+ }
+ .consultaDoctor{
+  border-radius: 25px ;
+padding-left: 10px;
+  height: 250px;
+  border: 0,1px solid black;
+  background-color: rgb(255, 255, 255);
+  line-height: 50px;
+ }
+ .cDoctor{
+  display: flex;
+  flex-direction: column;
+   background-color: rgb(212, 212, 212);
+ }
+ .odontologos{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
  }

@@ -1,8 +1,10 @@
 
 const doctores =
 [
-    { id: 1, nombre: "Doctor1", especialidad: "Odontólogo",img: "1.jpeg" ,sintoma:"caries,encias"},
-    { id: 2, nombre: "Doctor2", especialidad: "Cardiologo",img: "2.jpeg",sintoma: "corazon,pecho"},
+  { id: 1, nombre: "Odontologo1", especialidad: "Odontólogo",img: "1.jpeg" ,sintoma:"caries,encias"},
+  { id: 2, nombre: "Odontologo2", especialidad: "Odontólogo",img: "odontologo2.jpeg" ,sintoma:"caries,encias"},
+  { id: 3, nombre: "Odontologo3", especialidad: "Odontólogo",img: "odontologo3.jpeg" ,sintoma:"caries,encias"},
+     { id: 2, nombre: "Doctor2", especialidad: "Cardiologo",img: "2.jpeg",sintoma: "corazon,pecho"},
     { id: 3, nombre: "Doctor3", especialidad: "Infectologo",img: "3.jpeg",sintoma:"fiebre,garganta"  },
     { id: 4, nombre: "Doctor4", especialidad:  "Otorrinolaringolo",img: "4.jpeg",sintoma:"oido,nariz,garganta,cabeza,cuello"  },
     { id: 5, nombre: "Doctor5", especialidad: "Endocrinologo",img: "5.jpeg",sintoma:"obesidad,diabetes"},

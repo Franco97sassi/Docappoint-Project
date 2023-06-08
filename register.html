@@ -21,7 +21,7 @@
         </nav>
         
     </header>
-    <main>
+    <main class="registro">
         <section class="bg-box">
             <img  alt=""/>
         </section>
@@ -34,27 +34,36 @@
                 <div class="register">
                     <form action="" id="formReg">
 
-                        <div class="input-box" class="login">
+                        <!-- <div class="input-box" class="login">
                             <span>Nombre</span>
                          
                             <input type="text" id="nombre">
-                        </div>
-
-                        <div class="input-box" class="login">
-                            <span>Usuario</span>
-                            <input type="text" id="userReg">
-                        </div>
-
-                        <div class="input-box" class="login">
-                            <span>Email</span>
-                            <input type="text" id="email">
-                        </div>
-
-                        <div class="input-box" class="login">
-                            <span>Contraseña</span>
-                            <input type="password" id="passReg">
-                        </div>
-
+                        </div> -->
+                        <div class="input-group" class="login">
+                            <span class="input-group-text">Nombre</span>
+                            <textarea class="form-control" aria-label="With textarea" id="nombre"></textarea>
+                          </div>
+                          <br>
+                          <div class="input-group" class="login">
+                            <span class="input-group-text">Usuario</span>
+                            <textarea class="form-control" aria-label="With textarea" id="userReg"></textarea>
+                          </div>
+                           
+                          <br>
+                          <div class="input-group" class="login">
+                            <span class="input-group-text">Email</span>
+                            <textarea class="form-control" aria-label="With textarea" id="email"></textarea>
+                          </div>
+                          <br>
+                          <div class="input-group" class="login">
+                            <span class="input-group-text">Contraseña</span>
+                            <textarea class="form-control" aria-label="With textarea" id="passReg"></textarea>
+                          </div>
+                          <br>
+                          <div class="input-group" class="login">
+                            <span class="input-group-text">Medico/Paciente</span>
+                            <textarea class="form-control" aria-label="With textarea" id="tipo"></textarea>
+                          </div>
                         <div class="input-box">
                              <input type="submit"  class="btn btn-primary" value="Registrar" id="registrar">
                         </div>
@@ -80,7 +89,18 @@
 
         </section>
     </main>
- 
+    <footer>
+        <section>
+        <h2>Contacto</h2>
+            <p>Direccion:...</p>
+            <p> Hermosillo,Sonora,Mexico</p>
+        </section>
+        <section> 
+        <img src="./caduceo.png" alt="">  <h3>Doccapoint</h3>
+        <p>Docappoint©2023-Encontrá tu especialista y pedí turno.</p>
+         
+    </section>
+</footer>
 <!--LinkBootstrap 5-->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
 integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
