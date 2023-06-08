@@ -64,7 +64,7 @@ function crearHTML(doctores) {
     let html1;
     contenedor2.innerHTML = "";
     for (const doctor of doctores) {
-      html1 = ` <tr><td> <img src="./img/${doctor.img}" width="100px" heigth="100px"/> </img></td>
+      html1 = ` <tr><td> <img  src="./img/${doctor.img}" width="100px" heigth="100px"/> </img></td>
              
            <td>${doctor.id}</td>
             

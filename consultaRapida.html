@@ -54,9 +54,13 @@
               <section  class="consultaRapidafondo" >
             
                 <label for="consulta"  > <h2>   Seleccione que sintomas   tiene o donde siente dolores </h2></label>
-                <input type="text" id="consulta"  >
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Buscar</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="consulta"> 
+                  </div>
+                <!-- <input type="text" id="consulta"  > -->
                 <table id="tabla">
-                    <th>Imagen</th>
+                    <th>Imagen</th> 
                     <th>ID</th>
                     <th>Nombre</th>
                     <th>Especialidad</th>
