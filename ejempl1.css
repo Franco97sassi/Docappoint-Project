@@ -1,0 +1,22 @@
+#modes_menu {
+    position: center;
+    opacity: 0; /* En vez de display para crear el efecto de desvanecimiento */
+    /* height: 0 */ /* Quitar ya que se necesita saber el tamaño del elemento */
+     
+    background: rgb(255, 0, 0);
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    transition: height 1s, opacity 1s; /* Transition para la animación */
+ }
+
+ /* #modes_menu ul {
+     display: flex;
+     flex-direction: column;
+     padding: 30px;
+     list-style: none;
+ }
+
+ #modes_menu ul li{
+    padding-bottom: 15px;
+ } */
