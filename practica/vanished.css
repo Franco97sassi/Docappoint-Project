@@ -1,0 +1,43 @@
+.hide{
+    visibility: hidden;
+}
+.active{
+    visibility: visible;transition: height 1s, opacity 1s;
+      
+}
+ 
+.perfil   img {
+    display: flex;
+    justify-content: flex-end;
+     
+}
+.f{
+    background-color: rgb(223, 255, 252);
+ }
+ .asd{
+    width: 2000px;
+ }
+ .card{
+    width: 10000px;
+    background-color: rgb(255, 255, 255)
+ }
+ .doctor2,.doctor3,.doctor4{
+    width: max-content;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+     margin-left: 200px;
+     border: 0px solid black;
+      font-weight: normal;
+        font-size: 20px;
+ }
+ .aws{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100px;
+ }
+ .logow a {
+   text-decoration: none;
+ }

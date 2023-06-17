@@ -1,5 +1,5 @@
-var modes = document.querySelector("#modes_menu");
-var mode_btn = document.querySelector("#modes-btn");
+var modes = document.querySelector(".modes_menu");
+var mode_btn = document.querySelector(".modes-btn");
 var modes_height = modes.clientHeight;
 modes.style.height = 0;
 
@@ -66,3 +66,49 @@ Swal.fire({
 // })
 // container.addEventListener('click', () => {
 //  cerrarEspecialista.click()})
+
+// function seleccionarPrecios(){
+//   let cbxPrecios = document.getElementById('cbxPrecios');
+//   let precios = cbxPrecios.value;
+
+//   document.getElementById('lblPrecioSeleccionado').innerHTML = `Ha seleccionada   ${precios}
+//   <Button id="modes-btn"  class="cesta-carrito" class="btn btn-dark"><i class='fa fa-commenting' id="especialista1">${precios}
+//   </i></Button>.
+  
+//   <div class="modal-contenedor">
+       
+//   <!-- Dentro del carrito-->
+//   <div class="modal-carrito">
+//     <h3>Carrito</h3>
+
+
+//     <!--boton para cerrar carrito-->
+//     <button class="btn-cerrar-carrito">
+//       <i class="fas fa-times-circle">CERRAR</i>
+//     </button>
+    
+//     <div class="carrito-contenedor">
+       
+//     </div>
+//     <textarea name="" id="" cols="30" rows="10"> </textarea> <button>submit</button>
+//   </div>
+// </div>    
+// `;
+// }
+// const abrirCarrito = document.querySelector('.cesta-carrito');
+// const modalContenedor = document.querySelector('.modal-contenedor');
+// // const modalCarrito = document.querySelector('.modal-carrito')
+// const cerrarCarrito = document.querySelector('.btn-cerrar-carrito');
+
+// //Creo los distintos eventos para cuando abro y me posiciono el carrito
+// abrirCarrito.addEventListener('click', () => {
+//     modalContenedor.classList.toggle('modal-active')
+// });
+
+// cerrarCarrito.addEventListener('click', () => {
+//     modalContenedor.classList.toggle('modal-active')
+// });
+
+// modalContenedor.addEventListener('click', () => {
+//     cerrarCarrito.click()
+// });
